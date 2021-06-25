@@ -1,0 +1,38 @@
+
+/* ------------------------------------------------------------------ */
+/* Header Styles
+/* ------------------------------------------------------------------ */
+
+header {
+  /* position: relative; */
+  height: auto;
+  width: 100%;
+  background: #161415 url(../images/JNJ-landingpage-hero-image.jpg) no-repeat top center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+}
+
+.header-icons-container {
+  text-align: left;  
+  margin: 2rem 0 0 12rem;
+}
+
+.header-icons-container img{
+  filter :brightness(0) invert(1);
+  margin: 0 1.4rem;
+}
+
+.header-hero-main {
+  width: 70%;
+  margin: 2% auto;
+}
+
+.header-hero-scroll {
+  width: 7%;
+  margin: 4% auto;
+}
