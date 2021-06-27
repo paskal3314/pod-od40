@@ -1,29 +1,67 @@
 
-/* screenwidth less than 1024px
+/* screenwidth less than 1199, lg
 --------------------------------------------------------------------- */
-@media only screen and (max-width: 1024px) {
-
+@media only screen and (max-width: 1199px) {
+  .introduce-contents-list-row {
+    padding: 0 2rem;
+  }
 }
 
-/* screenwidth less than 900px
+/* screenwidth less than 992px, md
 --------------------------------------------------------------------- */
-@media only screen and (max-width: 900px) {
-
+@media only screen and (max-width: 992px) {
+  
+  /* ------------------------------------------------------------------ */
+  /* Introduce Styles
+  /* ------------------------------------------------------------------ */
+  .introduce-contents-title h1 {
+    font-size: 5rem;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 0;
+  }
 }
 
-/* screenwidth less than 767px
+/* screenwidth less than 767px, xs-sm
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 767px) {
 
+  p {
+    font-size: 1.8rem !important;
+  }
+
+  h1 {
+    font-size: 4rem !important;
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* Header Styles
+  /* ------------------------------------------------------------------ */
   .header-icons-container {
     text-align: center;
     margin-left: 0;
   }
 
+  /* ------------------------------------------------------------------ */
+  /* Introduce Styles
+  /* ------------------------------------------------------------------ */
+
+  .introduce-contents-list-row p {
+    padding-right: 2rem;
+  }
+
+
 }
 
-/* screenwidth less than 480px
---------------------------------------------------------------------- */
-@media only screen and (max-width: 480px) {
 
-}
+/* // Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
