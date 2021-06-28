@@ -1,0 +1,40 @@
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #fff;
+  text-align: center;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+p, h1, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-size: 2.4rem;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+input, textarea {
+  font-size: 2rem !important;
+}
+
+input[type=text],
+input[type=email] {
+  height: 8rem;
+  padding: 0 2rem;
+}

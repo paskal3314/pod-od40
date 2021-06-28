@@ -1,0 +1,81 @@
+
+/* screenwidth less than 1199, lg
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 1199px) {
+  .introduce-contents-list-row {
+    padding: 0 2rem;
+  }
+}
+
+/* screenwidth less than 992px, xs-md
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 992px) {
+  
+  /* ------------------------------------------------------------------ */
+  /* Introduce Styles
+  /* ------------------------------------------------------------------ */
+  .introduce-contents-title h1 {
+    font-size: 5rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+
+/* screenwidth less than 767px, xs-sm
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+
+  p {
+    font-size: 1.8rem !important;
+  }
+
+  h1 {
+    font-size: 4rem !important;
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* Header Styles
+  /* ------------------------------------------------------------------ */
+  .header-icons-container {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* Introduce Styles
+  /* ------------------------------------------------------------------ */
+
+  .introduce-contents-list-row p {
+    padding-right: 2rem;
+  }
+
+  .introduce-learn-wrapper {
+    width: 100%;
+    margin: 10rem auto;
+    margin-bottom: 0;
+  }
+
+  .introduce-scrolldown a {
+    padding: 2rem 6rem;
+    width: 80%;
+  }
+
+  .reg-form-container button {
+    padding: 2rem 10rem;
+  }
+
+}
+
+
+/* // Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
