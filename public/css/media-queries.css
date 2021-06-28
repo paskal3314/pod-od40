@@ -1,4 +1,3 @@
-
 /* screenwidth less than 1199, lg
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 1199px) {
@@ -10,7 +9,6 @@
 /* screenwidth less than 992px, xs-md
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 992px) {
-  
   /* ------------------------------------------------------------------ */
   /* Introduce Styles
   /* ------------------------------------------------------------------ */
@@ -25,7 +23,6 @@
 /* screenwidth less than 767px, xs-sm
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 767px) {
-
   p {
     font-size: 1.8rem !important;
   }
@@ -57,16 +54,14 @@
   }
 
   .introduce-scrolldown a {
-    padding: 2rem 6rem;
+    padding: 2rem;
     width: 80%;
   }
 
   .reg-form-container button {
     padding: 2rem 10rem;
   }
-
 }
-
 
 /* // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { ... }

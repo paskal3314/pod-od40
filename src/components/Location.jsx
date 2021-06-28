@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
 const Location = () => {
   return (
@@ -14,13 +14,17 @@ const Location = () => {
           </div>
 
           <div className="location-img-container">
-            <img src="images/JNJ-landingpage-location-image.jpg" />
+            <img
+              src="images/JNJ-landingpage-location-image.jpg"
+              alt="location"
+            />
           </div>
 
           <div className="loc-cont-container">
             <h3>Ivey Business School</h3>
             <p>
-              1255 western Road, London, Ontario, Canada N6G 0N1<br />
+              1255 western Road, London, Ontario, Canada N6G 0N1
+              <br />
               <span className="impact-blue">ivey.uwo.ca</span>
             </p>
           </div>
@@ -28,13 +32,16 @@ const Location = () => {
           <div className="loc-cont-container">
             <h3>Have questions?</h3>
             <p>
-              Contact: <span className="impact-blue">Reya Singh - dsingh28@ITS.JNJ.com</span>
+              Contact:{" "}
+              <span className="impact-blue">
+                Reya Singh - dsingh28@ITS.JNJ.com
+              </span>
             </p>
           </div>
         </div>
       </Container>
     </section>
   );
-}
+};
 
 export default Location;
