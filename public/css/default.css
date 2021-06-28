@@ -28,3 +28,13 @@ h1 {
 h3 {
   font-size: 3rem;
 }
+
+input, textarea {
+  font-size: 2rem !important;
+}
+
+input[type=text],
+input[type=email] {
+  height: 8rem;
+  padding: 0 2rem;
+}

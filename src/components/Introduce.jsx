@@ -23,9 +23,10 @@ const Introduce = () => {
       </Container>
 
       <Container fluid className="introduce-contents-wrapper">
+        <div className="int-bg" />
         <div className="int-bg-pattern-dots" />
         <div className="int-bg-box-1" />
-        <div className="int-bg-box-2" />
+        {/* <div className="int-bg-box-2" /> */}
         <Row>
           <div className="introduce-contents-title col-lg-3 offset-lg-2 col-md-12">
             <h1>Top <span className="impact-blue">5 Reasons</span> You Should Apply</h1>
@@ -97,12 +98,14 @@ const Introduce = () => {
         </Row>
 
         <div className="introduce-scrolldown">
-          <a href="#registration">
+          <a href="#registration" className="btn btn-primary">
             INTERESTED? <span style={{'font-weight': '400'}}>APPLY NOW</span>
           </a>
         </div>
 
         <div className="introduce-learn-wrapper">
+          
+          <div className="int-bg-box-2 d-none d-lg-block" />
           <div className="introduce-learn-title">
             <h1>What Will I <span className="impact-blue">Learn</span>?</h1>
             <div className="underline" />
@@ -134,7 +137,7 @@ const Introduce = () => {
                 <div className="int-learn-item">
                   <img src="images/JNJ-landingpage-peernetworking-icon.png" />
                   <label>Peer Networking</label>
-  P    N         </div>
+                </div>
               </Col>
               <Col>
                 <div className="int-learn-item">

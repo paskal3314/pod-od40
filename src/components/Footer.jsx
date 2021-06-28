@@ -6,7 +6,7 @@ const Footer = () => {
     <section id="footer">
       <Container>
         <p>
-          Footer
+          Powered by Marketing4ecps Inc. 2017
         </p>
       </Container>
     </section>

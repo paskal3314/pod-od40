@@ -1,6 +1,7 @@
 :root {
   --blue: #006ecc;
   --red: #ed1c24;
+  --bgPink: #fce8e9;
 }
 
 
@@ -75,9 +76,9 @@ header {
 }
 
 .introduce-contents-wrapper {
-  background-color: #f7f7f7;
-  background-image: url(../images/jnj-dots-pattern.png);
+  /* background-image: url(../images/jnj-dots-pattern.png); */
   padding: 10rem;
+  position: relative;
 }
 
 .introduce-contents-title {
@@ -91,6 +92,7 @@ header {
   border-bottom: 1px solid var(--red);
   padding-bottom: 2rem;
   margin-bottom: 3rem;
+  font-weight: 200;
 }
 
 .int-cont-list-container {
@@ -140,28 +142,27 @@ header {
 }
 
 .introduce-scrolldown {
-  font-size: 3rem;
   font-family: 'Poppins', sans-serif;
-  font-weight: 100;
   width: fit-content;
   height: fit-content;
   margin: 5rem auto;
+  letter-spacing: 0.8rem;
 }
 .introduce-scrolldown a {
+  font-weight: 100;
+  font-size: 3rem;
   background-color: var(--blue);
   color: white;
-  padding: 2rem 4rem;
+  padding: 2rem 6rem;
   text-decoration: none;
 }
 
-.introduce-scrolldown a:hover {
-  color: white;
-}
 
 .introduce-learn-wrapper {
   width: 65%;
   margin: 10rem auto;
   margin-bottom: 0;
+  position: relative;
 }
 
 .introduce-learn-title {
@@ -171,6 +172,7 @@ header {
 .introduce-learn-title h1 {
   font-size: 5rem;
   text-align: left;
+  font-weight: 200;
 }
 
 .introduce-learn-title .underline {
@@ -194,6 +196,7 @@ header {
 
 .int-learn-item img{
   height: 120px;
+  width: auto;
   margin: auto;
 }
 
@@ -204,17 +207,335 @@ header {
   margin: 1rem 0;
 }
 
-.int-bg-pattern-dots {
-  /* background-image: url(../images/jnj-dots-pattern.png);
+.int-bg {
+  background-color: #f7f7f7;
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100%; */
+  height: 100%;
+  z-index: -3;
 }
 
-.int-bg-box-1, .int-bg-box-2 {
-
+.int-bg-pattern-dots {
+  background-image: url(../images/jnj-dots-pattern.png);
+  position: absolute;
+  left: 0;
+  top: 10%;
+  width: 100%;
+  height: 90%; 
+  z-index: -1;
 }
+
+.int-bg-box-1, 
+.int-bg-box-2 {
+  background-color: var(--bgPink);
+  position: absolute;
+  z-index: -2;
+}
+
+.int-bg-box-1 {
+  width: 60%;
+  height: 44%;
+  top: 14%;
+  left: 31%;
+}
+.int-bg-box-2 {
+  width: 100%;
+  height: 90%;
+  top: 10%;
+  left: -35%;
+}
+
+
 
 /* <div className="int-bg-pattern-dots" />
         <div className="int-bg-box-1" />
         <div className="int-bg-box-2" /> */
+
+
+/* ------------------------------------------------------------------ */
+/* Agenda Styles
+/* ------------------------------------------------------------------ */
+
+#agenda {
+  position: relative;
+  padding-bottom: 20rem;
+}
+
+.agenda-wrapper {
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+
+.agenda-wrapper .col-4 {
+  padding: 1.2rem;
+}
+
+.agenda-title h1 {
+  font-size: 5rem;
+  text-align: left;
+  border-bottom: 1px solid var(--red);
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+  width: 300px;
+  font-weight: 200;
+}
+
+.agenda-item {
+  color: white;
+  font-weight: 200;
+  padding: 3rem 2rem;
+  height: 100%;
+}
+
+.agenda-item h3{
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.agenda-img-profile {
+  width: 70%;
+  height: auto;
+  justify-content: center;
+  border-radius: 70%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.agenda-img-profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.agenda-item h3.agenda-name{
+  font-weight: 200;
+  margin: 3rem 0;
+}
+
+.agenda-icons-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+}
+
+.agenda-item .agenda-icon {
+  width: 65px;
+  height: auto;
+}
+
+.agenda-item p {
+  font-size: 2rem;
+  padding: 0 0.6rem;
+}
+
+.agenda-item p a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+
+.bg-red {
+  background-color: var(--red);
+}
+
+.bg-blue {
+  background-color: var(--blue);
+}
+
+.agenda-bg-box {
+  background-color: var(--bgPink);
+  position: absolute;
+  z-index: -2;
+
+  width: 92%;
+  height: 70%;
+  top: 20%;
+  right: 0;
+}
+
+.agenda-bg-pattern {
+  background-image: url(../images/jnj-dots-pattern.png);
+  position: absolute;
+  left: 0;
+  top: 10%;
+  width: 100%;
+  height: 90%; 
+  z-index: -1;
+}
+
+/* ------------------------------------------------------------------ */
+/* Location Styles
+/* ------------------------------------------------------------------ */
+
+#location {
+  position: relative;
+}
+
+.location-wrapper {
+  margin: auto;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.location-title h1 {
+  font-size: 5rem;
+  text-align: left;
+  border-bottom: 1px solid var(--red);
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+  width: 300px;
+  font-weight: 200;
+}
+
+.location-img-container {
+  text-align: left;
+  margin: 4rem 0;
+}
+
+.loc-cont-container {
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+.loc-cont-container h3 {
+  color: var(--red);
+  font-size: 3rem;
+}
+
+.loc-cont-container p {
+  font-size: 2rem;
+}
+
+.loc-cont-container span {
+  font-size: 2.4rem;
+}
+
+.location-bg-box {
+  background-color: var(--bgPink);
+  position: absolute;
+  z-index: -2;
+
+  width: 35%;
+  height: 70%;
+  top: 10%;
+  left: 45%;
+}
+
+.location-bg-pattern {
+  background-image: url(../images/jnj-dots-pattern.png);
+  position: absolute;
+  right: 5%;
+  top: 25%;
+  width: 50%;
+  height: 30%; 
+  z-index: 1;
+}
+
+/* ------------------------------------------------------------------ */
+/* Registration Styles
+/* ------------------------------------------------------------------ */
+
+#registration {
+  background: url(../images/JNJ-landingpage-registration-image.jpg) no-repeat top center;
+  background-size: cover;
+  background-position: top center;
+  overflow: hidden;
+  color: white;
+  padding: 5rem 0;
+}
+
+.registration-title h1{
+  font-size: 5rem;
+  font-weight: 200;
+  text-align: left;
+  border-bottom: 1px solid white;
+  width: fit-content;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.reg-form-container {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 2.4rem;
+}
+
+.reg-form-container p {
+  text-align: left;
+  padding: 2rem 0;
+  font-size: 2rem;
+}
+
+.reg-input-container {
+  padding: 1rem 1rem 1rem 0;
+}
+
+.reg-input-rad-container, .reg-input-textarea-container {
+  text-align: left;
+}
+
+.reg-input-label {
+  padding: 1.6rem 0;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.input-rad-row {
+  font-size: 2rem;
+}
+
+.input-rad-row input[type="radio"] {
+  margin-right: 2rem;
+}
+
+.reg-input-textarea-container textarea {
+  padding: 2rem;
+}
+
+.reg-form-container button {
+  font-size: 3rem;
+  margin: 5rem 0;
+  width: max-content;
+  padding: 2rem 20rem;
+  background-color: var(--blue);
+  letter-spacing: 0.8rem;
+}
+
+.reg-thx-msg-container {
+  width: 70%;
+  margin: auto;
+  margin-top: 5rem;
+  font-size: 2rem;
+}
+
+.reg-thx-msg-container h3{
+  font-size: 3rem;
+}
+.reg-thx-msg-container p{
+  text-align: center;
+}
+
+/* ------------------------------------------------------------------ */
+/* Footer Styles
+/* ------------------------------------------------------------------ */
+
+#footer {
+  background-color: var(--blue);
+  color: white;
+  font-weight: 100;
+  padding: 0.6rem 0;
+  text-align: center;
+  justify-content: center;
+}
+
+#footer p {
+  font-size: 1.4rem;
+  margin: 0;
+}

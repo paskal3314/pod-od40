@@ -7,7 +7,7 @@
   }
 }
 
-/* screenwidth less than 992px, md
+/* screenwidth less than 992px, xs-md
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 992px) {
   
@@ -17,7 +17,7 @@
   .introduce-contents-title h1 {
     font-size: 5rem;
     width: 100%;
-    text-align: left;
+    text-align: center;
     margin-bottom: 0;
   }
 }
@@ -50,6 +50,20 @@
     padding-right: 2rem;
   }
 
+  .introduce-learn-wrapper {
+    width: 100%;
+    margin: 10rem auto;
+    margin-bottom: 0;
+  }
+
+  .introduce-scrolldown a {
+    padding: 2rem 6rem;
+    width: 80%;
+  }
+
+  .reg-form-container button {
+    padding: 2rem 10rem;
+  }
 
 }
 
